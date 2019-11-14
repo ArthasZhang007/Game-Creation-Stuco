@@ -17,8 +17,8 @@ public class NewBehaviourScript : MonoBehaviour
         Debug.Log(Speed);
         Debug.Log(LeftDir);
         Debug.Log(Time.deltaTime);
-        bool left = Input.GetKeyDown(KeyCode.LeftArrow);
-        bool right = Input.GetKeyDown(KeyCode.RightArrow);
+        bool left = Input.GetKey(KeyCode.LeftArrow);
+        bool right = Input.GetKey(KeyCode.RightArrow);
 
 
         if (left)
