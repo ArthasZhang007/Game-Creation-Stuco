@@ -5,8 +5,8 @@ using UnityEngine;
 public class ControlMovement : MonoBehaviour
 {
     // Update is called once per frame
-    public float acceleration = 1f;
-    public float maximumSpeed = 2;
+    public float acceleration = 2.5f;
+    public float maximumSpeed = 5;
     void Update()
     {
         bool left = Input.GetKey(KeyCode.LeftArrow);
@@ -22,6 +22,7 @@ public class ControlMovement : MonoBehaviour
             //I'm going right
             GetComponent<Rigidbody2D>().AddForce(new Vector2(acceleration, 0));
         }
-        Debug.Log(GetComponent<Rigidbody2D>().velocity);
+        //Debug.Log(GetComponent<Rigidbody2D>().velocity);
+        //Debug.Log(GetComponent<Rigidbody2D>().position);
     }
 }

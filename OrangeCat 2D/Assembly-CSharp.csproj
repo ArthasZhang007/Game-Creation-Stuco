@@ -62,8 +62,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\camera.cs" />
     <Compile Include="Assets\ControlMovement.cs" />
-    <Compile Include="Assets\NewBehaviourScript.cs" />
+    <Compile Include="Assets\OppositeControlMovement.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/andre/Documents/GitHub/Game-Creation-Stuco/OrangeCat 2D/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>

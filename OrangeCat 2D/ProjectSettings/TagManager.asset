@@ -38,6 +38,15 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 2446686709
+    locked: 0
+  - name: Transparent Objects
+    uniqueID: 4053798883
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Real Objects
+    uniqueID: 577869069
     locked: 0
