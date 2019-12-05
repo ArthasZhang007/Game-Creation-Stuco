@@ -6,6 +6,7 @@ public class camera : MonoBehaviour
 {
     public GameObject player1;
     public GameObject player2;
+    public GameObject background;
     //public GameObject copy;
     // Start is called before the first frame update
     void Start()
@@ -20,8 +21,8 @@ public class camera : MonoBehaviour
         var pos = (player1.transform.position+ player1.transform.position)/2;
         pos.z = -10;
         pos.y = transform.position.y;
-        transform.position = pos;
-        Debug.Log(transform.position);
+        if(pos.x>=-12.0f&&pos.x<=12.0f)transform.position = pos;
+        if (background.activeInHierarchy) transform.position = new Vector3( 0 , 0 , pos.z);
     }
 }
 
